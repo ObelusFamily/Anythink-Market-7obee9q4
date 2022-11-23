@@ -20,8 +20,8 @@ const mapDispatchToProps = (dispatch) => ({
 const ItemPreview = (props) => {
   const item = props.item;
 
-  if (!item.image){
-    item.image = "../placeholder.png"
+  if (!item.image) {
+    item.image = "../placeholder.png";
   }
   const handleClick = (ev) => {
     ev.preventDefault();
@@ -43,7 +43,7 @@ const ItemPreview = (props) => {
         className="card-img-top item-img"
         onError={({ currentTarget }) => {
           currentTarget.onerror = null;
-          currentTarget.src="../placeholder.png";
+          currentTarget.src = "../placeholder.png";
         }}
         placeholder={"../placeholder.png"}
         style={{ borderRadius: "20px" }}
@@ -61,7 +61,7 @@ const ItemPreview = (props) => {
               className="user-pic rounded-circle pr-1"
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
-                currentTarget.src="../placeholder.png";
+                currentTarget.src = "../placeholder.png";
               }}
               placeholder={"../placeholder.png"}
             />

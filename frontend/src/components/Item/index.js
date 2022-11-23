@@ -38,8 +38,8 @@ class Item extends React.Component {
       return null;
     }
 
-    if(!this.props.item.image){
-      this.props.item.image = "../placeholder.png"
+    if (!this.props.item.image) {
+      this.props.item.image = "../placeholder.png";
     }
 
     const markup = {
@@ -60,7 +60,7 @@ class Item extends React.Component {
                 style={{ height: "500px", width: "100%", borderRadius: "6px" }}
                 onError={({ currentTarget }) => {
                   currentTarget.onerror = null; // prevents looping
-                  currentTarget.src="../placeholder.png";
+                  currentTarget.src = "../placeholder.png";
                 }}
                 placeholder={"../placeholder.png"}
               />
