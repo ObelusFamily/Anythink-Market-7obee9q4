@@ -42,6 +42,7 @@ const ItemPreview = (props) => {
           currentTarget.onerror = null;
           currentTarget.src="../placeholder.png";
         }}
+        placeholder={"../placeholder.png"}
         style={{ borderRadius: "20px" }}
       />
       <div className="card-body">

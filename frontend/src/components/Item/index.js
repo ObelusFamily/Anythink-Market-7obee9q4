@@ -58,6 +58,7 @@ class Item extends React.Component {
                   currentTarget.onerror = null; // prevents looping
                   currentTarget.src="../placeholder.png";
                 }}
+                placeholder={"../placeholder.png"}
               />
             </div>
 
