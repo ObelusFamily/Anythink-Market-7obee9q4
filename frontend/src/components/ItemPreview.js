@@ -38,6 +38,10 @@ const ItemPreview = (props) => {
         alt="item"
         src={item.image}
         className="card-img-top item-img"
+        onError={({ currentTarget }) => {
+          currentTarget.onerror = null;
+          currentTarget.src="../placeholder.png";
+        }}
         style={{ borderRadius: "20px" }}
       />
       <div className="card-body">
